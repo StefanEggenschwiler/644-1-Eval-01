@@ -82,8 +82,8 @@ public class ListTrajet_BazActivity extends BaseActivity {
                                 Intent.FLAG_ACTIVITY_NO_HISTORY
                 );
                 intent.putExtra("Trajet", trajet);
-//                intent.putExtra("TrajetId", trajets.get(position).getUid());
-//                intent.putExtra("CardId", carId);
+                intent.putExtra("TrajetId", trajets.get(position).getUid());
+                intent.putExtra("CardId", carId);
                 startActivity(intent);
             }
 

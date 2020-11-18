@@ -42,20 +42,16 @@ public class TrajetActivity extends BaseActivity {
         previousIntent = getIntent();
         bundle = previousIntent.getExtras();
 
-        setTitle(/* getString(R.string.title_activity_accounts) */ "Détails Trajet");
+        setTitle("Détails Trajet");
         navigationView.setCheckedItem(position);
 
-        nameTrajet = findViewById(R.id.name);
- //       modelCar = findViewById(R.id.modelCar);
- //       nicknameCar = findViewById(R.id.nickNameCar);
+        nameTrajet = findViewById(R.id.nameTrajet);
         distance = findViewById(R.id.distance);
         down = findViewById(R.id.downTrip);
         up = findViewById(R.id.upTrip);
         consoElect = findViewById(R.id.consoElect);
         consoFuel = findViewById(R.id.consoFuel);
 
-//        carId = (long) bundle.get("CardId");
-//        trajetId = (long) bundle.get("TrajetId");
         TrajetEntity trajet = bundle.getParcelable("Trajet");
 
         String name = trajet.getName();
@@ -66,8 +62,6 @@ public class TrajetActivity extends BaseActivity {
         double consoF = trajet.getGasolinTot();
 
         nameTrajet.setText(name);
-//        modelCar.setText("modelOfCar" /*carConcerned.getModel() */);
-//        nicknameCar.setText("nameOfCar" /* carConcerned.getNickName() */ );
         distance.setText(String.valueOf(dist));
         down.setText(String.valueOf(deep));
         up.setText(String.valueOf(rise));
