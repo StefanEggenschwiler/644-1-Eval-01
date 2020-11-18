@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cheeses"
+            android:icon="@drawable/ic_cheese"
+            android:title="@string/drawer_cheeses" />
+        <item
+            android:id="@+id/nav_shielings"
+            android:icon="@drawable/ic_terrain_24px"
+            android:title="@string/drawer_shielings" />
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/ic_admin_panel_settings_black_24dp"
+            android:title="@string/drawer_admin_enter" />
+        <item
+            android:id="@+id/nav_none"
+            android:title=""
+            android:visible="false"/>
+    </group>
+
+</menu>

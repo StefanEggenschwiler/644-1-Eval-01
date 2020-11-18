@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ourapplication_kohl_roux_m.ui.MainActivity_AppCompatActivity">
+
+    <item
+        android:id="@+id/nav_add_car"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title="NewCar"
+        app:showAsAction="always"/>
+
+</menu>

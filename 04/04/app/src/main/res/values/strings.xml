@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">RacletteDB</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_cheeses">Cheeses</string>
+    <string name="title_activity_shielings">Shielings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_edit_cheese">Edit Cheese</string>
+    <string name="title_activity_edit_shieling">Edit shieling</string>
+
+    <!-- Home screen -->
+    <string name="title_favorites">Favorites</string>
+    <string name="title_favorites_cheesename">Cheese name</string>
+    <string name="title_shieling">Shieling of the week</string>
+    <string name="title_shieling_name">Shieling name</string>
+    <string name="no_cheese">No cheese to display 😢</string>
+    <string name="no_shieling">No shieling to display 😢</string>
+
+    <!-- Drawer -->
+    <string name="drawer_cheeses">Cheeses</string>
+    <string name="drawer_shielings">Shielings</string>
+    <string name="drawer_admin_enter">Administration</string>
+    <string name="drawer_admin_exit">Exit admin mode</string>
+
+    <!-- Cheeses list -->
+    <string name="cheeses_list_title">Cheeses</string>
+    <string name="cheeses_list_delete_title">Delete cheese</string>
+    <string name="cheeses_list_delete_text">Do you want to delete the cheese %1$s</string>
+    <string name="cheeses_list_deleted">Cheese deleted</string>
+    <!-- Cheese detail - read -->
+    <string name="cheese_detail_placeholder_title">Cheese name</string>
+    <string name="cheese_detail_description_title">Description</string>
+    <string name="cheese_detail_shieling_title">Shieling</string>
+    <string name="cheese_detail_type_title">Type</string>
+    <!-- Cheese detail - edit -->
+    <string name="cheese_edit_action">Edit cheese</string>
+    <string name="cheese_edit_title">Edit cheese</string>
+    <string name="cheese_edit_edited">Cheese edited</string>
+    <string name="cheese_edit_name_empty">The name of the cheese cannot be empty</string>
+    <!-- Cheese detail - new -->
+    <string name="cheese_new_title">New cheese</string>
+    <string name="cheese_new_created">Cheese created</string>
+    <!-- Cheese - common -->
+    <string name="cheese_common_hint_cheese_name">Cheese name</string>
+    <string name="cheese_common_hint_cheese_description">Cheese description</string>
+    <string name="cheese_common_hint_cheese_type">Cheese type</string>
+    <string name="cheese_common_hint_cheese_shieling">Cheese\'s shieling</string>
+
+    <!-- Shieling list -->
+    <string name="shielings_list_title">Shielings</string>
+    <string name="shielings_list_delete_title">Delete shieling</string>
+    <string name="shielings_list_delete_text">Do you want to delete the shieling %1$s</string>
+    <string name="shielings_list_delete_warning_text">Do you want to delete the shieling %1$s This will delete the cheeses that belong to it</string>
+    <string name="shielings_list_deleted">Shieling deleted</string>
+    <!-- Shieling detail - read -->
+    <string name="shieling_detail_placeholder_title">Shieling name</string>
+    <string name="shieling_detail_description_title">Description</string>
+    <!-- Shieling detail - edit -->
+    <string name="shieling_edit_action">Edit shieling</string>
+    <string name="shieling_edit_title">Edit shieling</string>
+    <string name="shieling_edit_edited">Shieling edited</string>
+    <string name="shieling_edit_name_empty">The name of the shieling cannot be empty</string>
+    <!-- Shieling detail - new -->
+    <string name="shieling_new_title">New shieling</string>
+    <string name="shieling_new_created">Shieling created</string>
+    <!-- Shieling - common -->
+    <string name="shieling_common_hint_cheese_name">Shieling name</string>
+    <string name="shieling_common_hint_cheese_description">Shieling description</string>
+
+    <!-- Admin -->
+    <string name="admin_title">Administrator mode</string>
+    <string name="admin_enable">Enable</string>
+    <string name="admin_incorrect_password">Wrong password</string>
+    <string name="admin_mode_active">Admin mode active</string>
+
+    <!-- Settings -->
+    <string name="pref_key_language" translatable="false">AppLanguage</string>
+    <string name="settings_action">Settings</string>
+    <string name="settings_about">About</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_title">Application language</string>
+    <string name="settings_language_choose">Choose language</string>
+    <string name="language_en">English 🇬🇧</string>
+    <string name="language_fr">French 🇫🇷</string>
+    <string name="language_de">German 🇩🇪</string>
+    <string name="settings_data">Data</string>
+    <string name="settings_data_room_reset">Reset Room database</string>
+    <string name="settings_data_room_reset_dialog_title">Room database reset</string>
+    <string name="settings_data_room_reset_dialog_text">Do you really want to restore the Room database to its initial content?</string>
+    <string name="settings_data_room_reset_successful">Room database reset successful</string>
+    <string name="settings_data_prefs_reset">Reset sharedPreferences</string>
+    <string name="settings_data_prefs_reset_dialog_title">sharedPreferences reset</string>
+    <string name="settings_data_prefs_reset_dialog_text">Do you really want to reset the shared preferences?</string>
+    <string name="settings_data_prefs_reset_successful">Shared preferences reset successful</string>
+
+    <!-- Common / Misc -->
+    <string name="close_application">Do you really want to close the application?</string>
+    <string name="empty" translatable="false"></string>
+    <string name="update">Update</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="execute">Execute</string>
+    <string name="close">Close</string>
+
+    <!-- A trier -->
+    <string name="pref_header_about">About</string>
+    <string name="pref_about_authors"><![CDATA[David Crittin & Sylvain Meyer]]></string>
+    <string name="pref_about_github" translatable="false">https://github.com/Khrid/HES_644-1_MobileDev_RacletteDB</string>
+    <string name="pref_about_text"><![CDATA[This application has been developped during our Android & Cloud development course. Its goal is to take in hand the Android development through a practical project. It was made possible with the great help of our teachers : Prof Dr Michael Ignaz Schumacher, and his asssistant Stefan Eggenschwiler.]]></string>
+    <string name="cheese_picture_removed">The picture will be removed</string>
+    <string name="take_picture" >Take picture</string>
+    <string name="choose_from_gallery" >Choose from gallery</string>
+    <string name="camera_permission_error" >Camera permission error</string>
+    <string name="selection_option">Selection option</string>
+    <string name="pref_header_authors">Authors</string>
+    <string name="pref_header_github" translatable="false">GitHub</string>
+    <string name="title_shieling_loc">Location</string>
+
+</resources>
