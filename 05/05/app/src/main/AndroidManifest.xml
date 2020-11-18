@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ch.hesso.remembeer">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:name=".RemembeerApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Remembeer">
+
+        <activity
+            android:name=".ui.brewery.BreweryEditActivity"
+            android:theme="@style/Theme.Remembeer.NoActionBar"/>
+        <activity
+            android:name=".ui.brewery.BreweryDetailsActivity"
+            android:theme="@style/Theme.Remembeer.NoActionBar" />
+        <activity
+            android:name=".ui.about.AboutActivity"
+            android:theme="@style/Theme.Remembeer.NoActionBar" />
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:theme="@style/Theme.Remembeer.NoActionBar" />
+        <activity
+            android:name=".ui.favori.FavoriActivity"
+            android:theme="@style/Theme.Remembeer.NoActionBar" />
+        <activity
+            android:name=".ui.beer.BeerEditActivity"
+            android:theme="@style/Theme.Remembeer.NoActionBar" />
+        <activity
+            android:name=".ui.brewery.BreweryActivity"
+            android:theme="@style/Theme.Remembeer.NoActionBar" />
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:theme="@style/Theme.Remembeer.NoActionBar" />
+        <activity
+            android:name=".ui.beer.BeersActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Remembeer.NoActionBar" />
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Remembeer.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.beer.BeerDetailsActivity"
+            android:parentActivityName=".ui.beer.BeersActivity"
+            android:theme="@style/Theme.Remembeer.NoActionBar" />
+    </application>
+
+</manifest>

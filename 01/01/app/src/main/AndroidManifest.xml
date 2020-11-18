@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hes.projet.ticketme">
+
+    <!--android:label="@string/app_name" -->
+    <!-- android:theme="@style/Theme.TicketMe.NoActionBar"> -->
+
+
+    <application
+        android:allowBackup="true"
+        android:label="Ticket Me"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TicketMe.NoActionBar">
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".ui.InfoActivity" />
+        <activity android:name=".ui.UserListActivity" />
+        <activity android:name=".ui.UserEditActivity" />
+        <activity android:name=".ui.TicketEditActivity" />
+        <activity android:name=".ui.TicketViewActivity" />
+        <activity android:name=".ui.TicketListActivity" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

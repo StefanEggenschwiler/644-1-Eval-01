@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/yellow_primary">
+    <ImageView
+        android:id="@+id/imageBrewery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="480dp"
+        android:src="@drawable/brasserie_valaisanne" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        tools:context=".ui.beer.BreweryDetailsActivity"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/NameBrewery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="textViewClicked"
+            android:fontFamily="@font/big_john"
+            android:text="Brasserie"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/black" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/pin_2"
+        />
+    <TextView
+        android:id="@+id/text_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="De"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/paragraphe" />
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/www2"
+                />
+            <TextView
+                android:id="@+id/text_web"
+                android:autoLink="web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Site web"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/black"
+                android:textColorLink="@color/background_color_dark"
+                android:textSize="@dimen/paragraphe" />
+        </LinearLayout>
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titre_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/big_john"
+                    android:text="@string/titre_description"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/titre2" />
+
+                <TextView
+                    android:id="@+id/txt_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/txt_description"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/text_color_light"
+                    android:layout_marginRight="40dp"
+                    android:textSize="@dimen/paragraphe" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|end"
+        tools:context=".ui.beer.BreweryDetailsActivity">
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fl_delete"
+                    style="@style/floating_action"
+                    android:onClick="deleteBrewery"
+                    android:src="@drawable/delete_black"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fl_like"
+                    style="@style/floating_action"
+                    android:onClick="setLikeBrewery"
+                    android:src="@drawable/like_yellow_empty"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fl_edit"
+                    style="@style/floating_action"
+                    android:onClick="editBrewery"
+                    android:src="@drawable/pencil_yellow"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</FrameLayout>

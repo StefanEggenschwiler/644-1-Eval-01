@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color_primary">@color/yellow_primary</color>
+    <color name="background_color_dark">@color/black</color>
+    <color name="text_color_dark">@color/yellow_primary</color>
+    <color name="background_color_light">@color/yellow_primary</color>
+    <color name="text_color_light">@color/black</color>
+    <color name="yellow_primary">#FFDA79</color>
+    <color name="yellow_secondary">#FFC312</color>
+    <color name="grey_primary">#7f8c8d</color>
+    <color name="grey_secondary">#95a5a6</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

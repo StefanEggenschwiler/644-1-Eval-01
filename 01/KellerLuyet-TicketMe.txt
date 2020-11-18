@@ -1,0 +1,8 @@
+https://github.com/Luysky/TicketMe.git
+
+For your first login to have an administrator access, please log with :
+
+tom@gmail.com
+1234
+
+To delete an user -> long click on it in the list. 

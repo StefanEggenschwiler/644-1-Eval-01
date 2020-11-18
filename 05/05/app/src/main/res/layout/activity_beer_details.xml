@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background_color_primary">
+        <ImageView
+            android:id="@+id/top_home_forme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/top_home" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            tools:context=".ui.beer.BeerDetailsActivity"
+            android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvNameBeer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:onClick="textViewClicked"
+                    android:fontFamily="@font/big_john"
+                    android:text="Biere name"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/yellow_primary" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/image_beer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/remembeer_icon_light"
+                                    android:adjustViewBounds="true" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="25dp"
+                            android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/text_from"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="from"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/text_color_dark"
+                                    android:textSize="@dimen/paragraphe" />
+                                <TextView
+                                    android:id="@+id/text_capacite"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="capacite"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/text_color_dark"
+                                    android:textSize="@dimen/paragraphe" />
+                                <TextView
+                                    android:id="@+id/text_alcool"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="alcool"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/text_color_dark"
+                                    android:textSize="@dimen/paragraphe" />
+
+                        </LinearLayout>
+                </LinearLayout>
+
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/titre_description"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="20dp"
+                                    android:fontFamily="@font/big_john"
+                                    android:text="@string/titre_description"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/text_color_light"
+                                    android:textSize="@dimen/titre2" />
+
+                                <TextView
+                                    android:id="@+id/txt_description"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="@string/txt_description"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                    android:textColor="@color/text_color_light"
+                                    android:layout_marginRight="40dp"
+                                    android:textSize="@dimen/paragraphe" />
+
+                        </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom|end">
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fl_delete"
+                    style="@style/floating_action"
+                    android:onClick="deleteBeer"
+                    android:src="@drawable/delete_black"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fl_like"
+                    style="@style/floating_action"
+                    android:onClick="setLikeBeer"
+                    android:src="@drawable/like_yellow_empty"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fl_edit"
+                    style="@style/floating_action"
+                    android:onClick="editBeer"
+                    android:src="@drawable/pencil_yellow"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+</FrameLayout>

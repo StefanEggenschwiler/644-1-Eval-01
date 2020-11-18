@@ -1,0 +1,94 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:locale="es">
+
+    <string name="app_name">BookYourTable</string>
+    <string name="bookingButton">Reservation</string>
+    <string name="bookingManagement">Manage a registration</string>
+    <string name="tableManagement">Manage the tables</string>
+    <string name="title_activity_main_table_management">MainTableManagement</string>
+    <string name="previous">Previous</string>
+    <string name="numberOfPersons">Select the number of persons</string>
+    <string name="plusButton" translatable="false">+</string>
+    <string name="minusButton" translatable="false">-</string>
+    <string name="timeSelect">Select a time slot</string>
+    <string name="selectDate">Select a date</string>
+    <string name="next">Next</string>
+    <string name="midday">Midday</string>
+    <string name="evening">Evening</string>
+    <string name="selectTable">Select a table</string>
+    <string name="name">Enter your name</string>
+    <string name="nameHint">Name</string>
+    <string name="telephoneNumber">Enter your telephone number</string>
+    <string name="telephoneHint" translatable="false">079.7977979</string>
+    <string name="comment">Enter a comment if needed</string>
+    <string name="commentHint">Baby chair, Vegetarian, Allergy</string>
+    <string name="validate">Validate</string>
+    <string name="validationText">The booking is done, return to menu</string>
+    <string name="backToMenu">Back to menu</string>
+    <string name="newReservationMenu">Register a new reservation</string>
+    <string name="manageBooking">Manage reservations</string>
+    <string name="modifyAReservation">Modify a reservation</string>
+    <string name="reservationList">Reservation list from</string>
+    <string name="modify">Modify</string>
+    <string name="delete">Delete</string>
+    <string name="selectReservation">Select a Reservation</string>
+    <string name="manageTables">Manage Tables</string>
+    <string name="modifyBooking">Select the reservation to change</string>
+
+    <string name="midday1" translatable="false">11:30</string>
+    <string name="midday2" translatable="false">12:00</string>
+    <string name="midday3" translatable="false">12:30</string>
+    <string name="midday4" translatable="false">13:00</string>
+    <string name="midday5" translatable="false">13:30</string>
+
+    <string name="evening1" translatable="false">19:30</string>
+    <string name="evening2" translatable="false">20:00</string>
+    <string name="evening3" translatable="false">20:30</string>
+    <string name="evening4" translatable="false">21:00</string>
+    <string name="evening5" translatable="false">21:30</string>
+
+    <string name="Add">Add</string>
+
+    <string name="tableNumber">Table Number :</string>
+    <string name="numberTableErr">Specify table\'s number</string>
+    <string name="numberPersonErr">Specify person\'s number</string>
+
+    <string name="numberofperson">Number of person :</string>
+    <string name="availability">Availability :</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_okDialogue">Ok</string>
+
+    <string name="createTable">Create Table</string>
+    <string name="createTable2">Table created</string>
+
+    <string name="editTable">Edit Table</string>
+    <string name="editTable2">Table edited</string>
+
+    <string name="addChange">Add Changes</string>
+    <string name="execute">Execute</string>
+    <string name="deleteMessage">Do you want delete Table %1$s ?</string>
+    <string name="tabledeleted">Table deleted</string>
+
+    <string name="action_about">About</string>
+    <string name="textAbout">Course 644-1 – AUTUMN Semester 2020-2021 \n\n
+        The goal of this project is to develop a mobile application that allows the user to register booking in a restaurant. \n
+        In this application, you can add, modify, delete and desactivates the differents tables in the restaurant. \n
+        You can also create a booking and attribute to one of the table. You can then consulte, modify and delete this bookings. \n
+        In options, you can change the language and activate/desactivate dark mode \n\n
+        This Application was developped by Quentin and Valentin.
+        </string>
+
+
+    <string name="darkMode" translatable="false">Dark mode</string>
+    <string name="language">Change language</string>
+    <string name="english">English</string>
+    <string name="french">French</string>
+
+    <string name="emptyName">Please enter your name</string>
+    <string name="emptyTelephone">Please enter your phone number</string>
+    <string name="emptyTable">Please select a table</string>
+    <string name="selectedTable">table no %1$s selected</string>
+    <string name="selectAll">Please select all values to continue</string>
+
+
+</resources>

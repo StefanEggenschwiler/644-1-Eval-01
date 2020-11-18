@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.workinghours">
+
+    <application
+        android:name=".BaseApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.project.AddProjectActivity"
+            android:label="@string/title_my_projects"
+            android:parentActivityName=".ui.login.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.workinghours.ui.login.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".ui.login.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".ui.project.AddProjectActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.workinghours.ui.project.AddProjectActivity" />
+        </activity>
+        <activity
+            android:name=".ui.login.RegisterActivity"
+            android:label="@string/action_register"
+            android:parentActivityName=".ui.login.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.workinghours.ui.login.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/addNewProjectName"
+            android:parentActivityName=".ui.login.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.workinghours.ui.login.RegisterActivity" />
+        </activity>
+        <activity
+            android:name=".ui.project.AddProjectPage"
+            android:label="@string/addNewProjectName"
+            android:parentActivityName=".ui.project.AddProjectActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.workinghours.ui.project.AddProjectActivity" />
+        </activity>
+        <activity
+            android:name=".ui.project.ProjectDetails"
+            android:label="@string/title_my_projects"
+            android:parentActivityName=".ui.project.AddProjectActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.workinghours.ui.project.AddProjectActivity" />
+        </activity>
+        <activity
+            android:name=".ui.project.ProjectTrack"
+            android:label="@string/start_chronometer"
+            android:parentActivityName=".ui.project.ProjectDetails"
+            android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.workinghours.ui.project.ProjectDetails" />
+        </activity>
+
+        <activity
+            android:name=".ui.activity.AddActivityInProject"
+            android:label="@string/add_activity_name"
+            android:parentActivityName=".ui.project.ProjectTrack"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.workinghours.ui.project.ProjectTrack" />
+         </activity>
+        <activity
+            android:name=".ui.BaseActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

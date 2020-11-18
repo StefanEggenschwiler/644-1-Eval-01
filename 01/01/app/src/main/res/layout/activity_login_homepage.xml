@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="26dp"
+    tools:context=".ui.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/ticketme"
+        android:layout_marginBottom="16dp"
+        android:textSize="38sp" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="28dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:hint="@string/loginHomepage_email"
+        android:inputType="textEmailAddress"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="28dp"
+        android:autofillHints=""
+        android:hint="@string/loginHomepage_password"
+        android:inputType="textPassword"
+        android:textSize="22sp" />
+
+    <Button
+
+        android:id="@+id/login_btnLogin"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="@string/loginHomepage_connect"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="@android:dimen/app_icon_size">
+
+        <TextView
+            android:id="@+id/login_noAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@string/loginHomepage_noAccount"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/login_btnSignIn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="2"
+            android:backgroundTint="@color/papayaWhip"
+            android:onClick="clickNewUser"
+            android:text="@string/loginHomepage_register"
+            android:textAllCaps="false"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:id="@+id/login_btnForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:backgroundTint="@color/papayaWhip"
+        android:onClick="clickForgotPassword"
+        android:text="@string/loginHomepage_forgotPassword"
+        android:textAllCaps="false"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+
+</LinearLayout>

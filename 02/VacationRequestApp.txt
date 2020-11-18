@@ -1,0 +1,4 @@
+https://github.com/samwenger/AndroidApplicationv3/
+
+Logins and informations are available in the README file, directly uploaded into github.
+
